@@ -1,18 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+
+const pageTitle = "Home Page";
 ---
 
 <Layout>
   <html>
     <body>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <h1>Hello, World!</h1>
+      <Navigation />
+      <h1>{pageTitle}</h1>
     </body>
   </html>
-  <style>
-    h1 {
-      color: orange;
-    }
-  </style>
 </Layout>
