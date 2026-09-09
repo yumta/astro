@@ -1,15 +1,20 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 
 const pageTitle = "Home Page";
 ---
 
-<Layout>
-  <html>
-    <body>
-      <Navigation />
-      <h1>{pageTitle}</h1>
-    </body>
-  </html>
-</Layout>
+<html>
+  <Header />
+  <body>
+    <h1>{pageTitle}</h1>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
+</html>
