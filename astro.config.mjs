@@ -2,8 +2,9 @@
 import { defineConfig, envField } from "astro/config";
 
 export default defineConfig({
+  site: "https://example.com",
   server: {
-    port: 3000,
+    port: 4321,
   },
   env: {
     schema: {
