@@ -31,7 +31,7 @@ const filteredPosts = posts.filter((post: any) =>
 <BaseLayout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   {
-    posts.map((post: any) => (
+    filteredPosts.map((post: any) => (
       <BlogPost url={post.url} title={post.frontmatter.title} />
     ))
   }
